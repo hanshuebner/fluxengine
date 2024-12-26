@@ -402,5 +402,35 @@ option_group {
 			}
 		}
 	}
+
+	option {
+		name: "Tailorix S4"
+		comment: 'Tailorix S4 8" 77-track 26-sector DSHD'
+
+		config {
+			layout {
+				format_type: FORMATTYPE_80TRACK
+				tracks: 77
+				sides: 2
+				layoutdata {
+					sector_size: 256
+					physical {
+						start_sector: 1
+						count: 26
+                                                skew: 6
+					}
+				}
+			}
+
+			encoder {
+				ibm {
+					trackdata {
+						target_rotational_period_ms: 167
+						target_clock_period_us: 2
+					}
+				}
+			}
+		}
+	}
 }
 
