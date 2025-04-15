@@ -49,6 +49,7 @@ image format. FluxEngine will use these parameters.
       - `1232`: 1232kB 5.25" 77-track 8-sector DSHD
       - `1440`: 1440kB 3.5" 80-track 18-sector DSHD
       - `1680`: 1680kB 3.5" 80-track 21-sector DSHD; DMF
+      - `Tailorix S4`: Tailorix S4 8" 77-track 26-sector DSHD
 
 ## Examples
 
@@ -64,6 +65,7 @@ To read:
   - `fluxengine read -c ibm --1232 -s drive:0 -o ibm.img`
   - `fluxengine read -c ibm --1440 -s drive:0 -o ibm.img`
   - `fluxengine read -c ibm --1680 -s drive:0 -o ibm.img`
+  - `fluxengine read -c ibm --Tailorix S4 -s drive:0 -o ibm.img`
 
 To write:
 
@@ -77,6 +79,7 @@ To write:
   - `fluxengine write -c ibm --1232 -d drive:0 -i ibm.img`
   - `fluxengine write -c ibm --1440 -d drive:0 -i ibm.img`
   - `fluxengine write -c ibm --1680 -d drive:0 -i ibm.img`
+  - `fluxengine write -c ibm --Tailorix S4 -d drive:0 -i ibm.img`
 
 Mixed-format disks
 ------------------

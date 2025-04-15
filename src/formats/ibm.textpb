@@ -430,6 +430,10 @@ option_group {
 					}
 				}
 			}
+
+                        decoder {
+                                retries: 25
+                        }
 		}
 	}
 }
