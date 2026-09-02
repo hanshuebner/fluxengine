@@ -436,5 +436,25 @@ option_group {
 			}
 		}
 	}
+
+	option {
+		name: "rx01"
+		comment: 'DEC RX01 8" 77-track 26-sector SSSD'
+
+		config {
+			layout {
+				format_type: FORMATTYPE_80TRACK
+				tracks: 77
+				sides: 1
+				layoutdata {
+					sector_size: 128
+					physical {
+						start_sector: 1
+						count: 26
+					}
+				}
+			}
+		}
+	}
 }
 

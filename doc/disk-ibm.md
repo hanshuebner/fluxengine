@@ -50,6 +50,7 @@ image format. FluxEngine will use these parameters.
       - `1440`: 1440kB 3.5" 80-track 18-sector DSHD
       - `1680`: 1680kB 3.5" 80-track 21-sector DSHD; DMF
       - `taylorix_s4`: 1001kB 8" 77-track 26-sector DSDD; Taylorix System 4
+      - `rx01`: DEC RX01 8" 77-track 26-sector SSSD
 
 ## Examples
 
@@ -66,6 +67,7 @@ To read:
   - `fluxengine read -c ibm --1440 -s drive:0 -o ibm.img`
   - `fluxengine read -c ibm --1680 -s drive:0 -o ibm.img`
   - `fluxengine read -c ibm --taylorix_s4 -s drive:0 -o ibm.img`
+  - `fluxengine read -c ibm --rx01 -s drive:0 -o ibm.img`
 
 To write:
 
